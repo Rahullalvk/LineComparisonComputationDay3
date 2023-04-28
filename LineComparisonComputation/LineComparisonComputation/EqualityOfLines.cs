@@ -32,7 +32,7 @@ namespace LineComparisonComputation
             Console.WriteLine("x2= :" + x2b);
             int y2b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("y2= :" + y2b);
-            float length2 = (float)Math.Sqrt((x2a - x1a) ^ 2 + (y2a - y1a) ^ 2);
+            float length2 = (float)Math.Sqrt((x2b - x1b) ^ 2 + (y2b - y1b) ^ 2);
             Console.WriteLine("The length of second line =" + length2);
 
             if (length1 == length2)
@@ -43,6 +43,15 @@ namespace LineComparisonComputation
             else
             {
                 Console.WriteLine("Two lines are not equal");
+            }
+            if (length1 > length2) 
+            {
+                Console.WriteLine("First line length  is greater than the second line");
+
+            }
+            else 
+            {
+                Console.WriteLine("Second line length is greater then first line");
             }
         }
     }
